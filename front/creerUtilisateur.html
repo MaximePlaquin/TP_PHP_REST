@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="styleLogin.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <form id="formulaireC" action="../back/rest.php?/users" method="post">
+        <div class="login">
+            <div class="login-form">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Créer un utilisateur</h1>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="login-field" placeholder="Nom" id="login-name" name="nom">
+                        <label class="login-field-icon fui-user" for="login-name">Nom</label>
+                    </div>
+
+                    <div class="control-group">
+                        <input type="text" class="login-field" placeholder="prenom" id="login-name1" name="prenom">
+                        <label class="login-field-icon fui-lock" for="login-pass">Prenom</label>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="login-field" placeholder="pseudo" id="login-pass" name="pseudo">
+                        <label class="login-field-icon fui-lock" for="login-pass">Pseudo</label>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="login-field" placeholder="mdp" id="login-pass" name="mdp">
+                        <label class="login-field-icon fui-lock" for="login-pass">Mdp</label>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-large btn-block" value="Enregistrer"/>
+                    <input type="" class="btn btn-primary btn-large btn-block" value="Annuler" onclick='window.location.href = "gestionUtilisateur.html"' />
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
